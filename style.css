@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f1f3f4;
+    font-family: sans-serif;
+
+}
+
+.top-nav-bar {
+    height: 57px;
+    top: 0;
+    position: sticky;
+    background: white;
+    margin-bottom: 20px;
+    border-bottom: 3px solid orange;
+    z-index: 2;
+}
+
+.logo {
+    height: 40px;
+    margin: 5px 10px;
+}
+
+.form-control {
+    margin-top: 9px;
+    margin-left: 30px;
+    border: 1px solid orange !important;
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    box-shadow: none;
+}
+
+.input-group-text {
+    background: orange !important;
+    border: 1px solid orange !important;
+    margin: 8.5px 10px 3px 0 !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    cursor: pointer;
+}
+
+.search-box {
+    display: inline-flex;
+    width: 60%;
+}
+
+.fa-search {
+    color: white;
+}
+
+.menu-bar {
+    width: 40%;
+    height: 57px;
+    float: right;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    float: right;
+}
+
+.menu-bar ul li {
+    list-style: none;
+    border-left: 1px solid white;
+    text-align: center;
+    background-color: orange;
+    cursor: pointer;
+    padding: 15px 35px;
+}
+
+.menu-bar ul li a {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu-bar ul li a:hover {
+    color: black;
+}
+
+.fa-shopping-basket {
+    margin-right: 5px;
+}
+
+.side-menu {
+    height: 79%;
+    width: 15%;
+    font-size: 14px;
+    float: left;
+    z-index: 2;
+    background-color: #ddd;
+}
+
+.side-menu ul {
+    margin-left: 10px;
+}
+
+.side-menu ul li {
+    list-style: none;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.side-menu ul li:hover {
+    color: orange;
+}
+
+.side-menu ul li ul {
+    display: none;
+    z-index: 10;
+    top: 77px;
+}
+
+.side-menu ul li:hover ul{
+    display: block;
+    height: 400px;
+    margin-left: 14%;
+    padding: 0 100px 10px 10px;
+    position: fixed;
+    background-color: #ececec;
+    box-shadow: 1px 1px 4px 1px rbga(0,0,0,5);
+}
+
+.fa-angle-right {
+    margin-top: 4px;
+    margin-right: 8px;
+    float: right;
+}
+
+#menu-btn, #close-btn {
+    font-size: 30px;
+    margin: 10px;
+    color: orange;
+    display: none;
+}
+
+/* CSS untuk slider */
+.slider {
+    width: 85%;
+    margin-left: 15%;
+    padding: 0 10px;
+}
+
+.carousel {
+    box-shadow: 1px 1px 4px 1px rgba(0,0,0,5);
+}
+
+.carousel-indicators {
+    z-index: 1 !important;
+}
+
+.featured-categories {
+    margin: 50px 0;
+}
+
+.featured-categories img {
+    width: 100%;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.featured-categories img:hover {
+    transform: scale(1.1);
+}
+
+/* Title On Sale */
+.title-box {
+    background: orange;
+    color: white;
+    width: 180px;
+    padding: 4px 10px;
+    height: 40px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.title-box h2 {
+    font-size: 24px;
+}
+
+.title-box::after {
+    content: '';
+    border-top: 40px solid orange;
+    border-right: 50px solid transparent;
+    position: absolute;
+    display: flex;
+    margin-top: -4px;
+    margin-left: 170px;
+}
+
+.product-top img {
+    width: 100%;
+}
+
+.overlay-right {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    margin-left: 0;
+    width: 70px;
+}
+
+.overlay-right .fa {
+    cursor: pointer;
+    background-color: black;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    padding: 7px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.overlay-right .btn-secondary {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.product-top:hover .overlay-right {
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s;
+}
+
+.product-bottom .fa {
+    color: orange;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.product-bottom h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product-bottom h5 {
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+/* Website features */
+.website-features {
+    margin: 60px 0;
+}
+
+.website-features img {
+    width: 20%;
+}
+
+.feature-text {
+    margin-top: 10px;
+    float: right;
+    width: 80%;
+    padding-left: 20px;
+}
+
+.feature-box {
+    padding-top: 20px;
+}
+
+.footer {
+    margin-top: 50px;
+    background: orange;
+    color: white;
+}
+
+.footer h1 {
+    font-size: 15px;
+    margin: 25px 0;
+}
+
+.footer p {
+    font-size: 12px;
+}
+
+.copyright {
+    margin-bottom: -80px;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+.footer hr {
+    margin-top: 10px;
+    background-color: #ccc;
+}
+
+.footer-img img {
+    width: 150px;
+}
+
+.footer .row .fa {
+    padding-right: 20px;
+    font-size: 15px;
+}
+
+.col-md-3 a {
+    color: white;
+}
+
+.fa-youtube-play {
+    color: red;
+}
+
+.fa-twitter {
+    color: aqua;
+}
+
+/* CSS Detail Product */
+.single-product {
+    margin-top: 70px;
+}
+
+.new-arrival {
+    background: green;
+    width: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.col-md-7 h2 {
+    color: #555;
+}
+
+.single-product .fa {
+    color: orange;
+}
+
+.single-product .price {
+    color: orange;
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.single-product input {
+    border: 1px solid #ccc;
+    font-weight: bold;
+    height: 33px;
+    width: 30px;
+    text-align: center;
+}
+
+.single-product .btn-primary {
+    background: orange;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    box-shadow: none !important;
+    margin-left: 20px;
+}
+
+.product-description h6 {
+    margin-top: 50px;
+    color: orange;
+}
+
+.product-description p {
+    margin-top: 30px;
+}
+
+.product-description hr {
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 980px) {
+    .top-nav-bar {
+        height: 118px;
+        border-bottom: 0;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .menu-bar {
+        width: 100%;
+    }
+
+    .menu-bar ul {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .menu-bar ul li {
+        height: 57px;
+        width: 100%;
+    }
+    .side-menu {
+        width: 34%;
+        z-index: 20;
+        top: 133px;
+        position: fixed;
+        font-size: 12px;
+    }
+
+    .side-menu ul li ul {
+        top: 133px;
+    }
+
+    .side-menu ul li:hover ul{
+        margin-left: 32%;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+
+    .slider {
+        width: 100%;
+        margin-left: 0;
+    }
+}
